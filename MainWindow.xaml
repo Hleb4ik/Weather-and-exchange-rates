@@ -1,0 +1,183 @@
+﻿<Window x:Class="ЕБС_ДБО_v._1._1._3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ЕБС_ДБО_v._1._1._3"
+        mc:Ignorable="d"
+        Title="Единая Банковская Система РБ" Height="400" Width="800"
+        AllowsTransparency="True" WindowStyle="None" Background="Transparent">
+    <Grid>
+        <Border Width="auto" Height="auto" BorderBrush="Black" BorderThickness="2"
+                CornerRadius="0,15,0,15">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientBrush.GradientStops>
+                        <GradientStopCollection>
+                            <GradientStop Color="White" Offset="0.45"></GradientStop>
+                            <GradientStop Color="Red" Offset="0.45"></GradientStop>
+                        </GradientStopCollection>
+                    </GradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="150"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Единая Банковская Система РБ" Padding="5"></TextBlock>
+                <Grid Grid.Row="2" Background="White">
+                    <Label Content="Интернет Банки" HorizontalAlignment="Left" Margin="10,-90,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Клиент Банки" HorizontalAlignment="Left" Margin="180,-90,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelPogoda" Content="Label" Padding="auto" FontSize="20" HorizontalAlignment="Left" Margin="675,-25,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Курс валют на сегодня (НБ РБ):" HorizontalAlignment="Left" FontSize="20" Margin="385,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelVUSD" Content="Label" HorizontalAlignment="Left" FontSize="20" Margin="370,40,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelVEUR" Content="Label" HorizontalAlignment="Left" FontSize="20" Margin="355,70,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelVRUB" Content="Label" HorizontalAlignment="Left" FontSize="20" Margin="340,100,0,0" VerticalAlignment="Top"/>
+                </Grid>
+                <TextBlock Text="Программа разработана Белых Г.А." Padding="5" Grid.Row="4" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="By.Tech Solution" Padding="5" Grid.Row="4" HorizontalAlignment="Left"></TextBlock>
+            </Grid>
+        </Border>
+        
+        <Button Content="БелВЭБ" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="БелВЭБ" HorizontalAlignment="Left" Margin="180,140,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_17">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Приорбанк" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_2">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
+        <Button Content="X" HorizontalAlignment="Left" Margin="775,5,0,0" VerticalAlignment="Top" Width="20" Background="Transparent" Click="Button_Click_3">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
+        <Button Content="Авест" HorizontalAlignment="Left" Margin="315,280,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_4">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="ПМС" HorizontalAlignment="Left" Margin="303,305,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_5">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Дист. помощь" HorizontalAlignment="Left" Margin="291,330,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_15">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Налоговая" HorizontalAlignment="Left" Margin="690,280,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_6">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="МТБанк" HorizontalAlignment="Left" Margin="180,65,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_12">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="МТБанк" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Статус Банк" HorizontalAlignment="Left" Margin="180,90,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_13">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Тех.поддержка" HorizontalAlignment="Left" Margin="690,305,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_7">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Дабрабыт" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_11">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Банк Решение" HorizontalAlignment="Left" Margin="180,115,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_14">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="POS-Терминалы" HorizontalAlignment="Left" Margin="690,330,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_8">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="БайТех" HorizontalAlignment="Left" Margin="690,355,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_9">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Монетка" HorizontalAlignment="Left" Margin="279,355,0,0" VerticalAlignment="Top" Width="100" Background="Transparent" Click="Button_Click_16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
